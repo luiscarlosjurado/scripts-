@@ -1,0 +1,795 @@
+# 01 — Inventario de fuentes ICFES + IPM (SESION-002)
+
+Solo mide y describe: sin filtros, imputaciones ni tratamientos.
+Fuente de cifras: ejecucion de scripts/01_inventario.py (chunks de 250_000).
+
+## B1 — ICFES por archivo
+
+| archivo | periodo | registros | columnas | cabecera_59 | duplicados |
+|---|---|---|---|---|---|
+| Examen_Saber_11_20182_limpio.csv | 20182 | 609136 | 59 | True | 0 |
+| Examen_Saber_11_20191_limpio.csv | 20191 | 66104 | 59 | True | 0 |
+| Examen_Saber_11_20192_limpio.csv | 20192 | 614789 | 59 | True | 0 |
+| Examen_Saber_11_20211_limpio.csv | 20211 | 58708 | 59 | True | 0 |
+| Examen_Saber_11_20212_limpio.csv | 20212 | 606030 | 59 | True | 0 |
+| Examen_Saber_11_20221_limpio.csv | 20221 | 73795 | 59 | True | 0 |
+| Examen_Saber_11_20222_limpio.csv | 20222 | 589183 | 59 | True | 0 |
+| Examen_Saber_11_20231_limpio.csv | 20231 | 77555 | 59 | True | 0 |
+| Examen_Saber_11_20232_limpio.csv | 20232 | 602093 | 59 | True | 0 |
+| Examen_Saber_11_20241_limpio.csv | 20241 | 84072 | 59 | True | 0 |
+| Examen_Saber_11_20242_limpio.csv | 20242 | 592436 | 59 | True | 0 |
+
+Total registros 11 archivos: **3973901**.
+
+### 20182 (Examen_Saber_11_20182_limpio.csv)
+
+- registros: 609136
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20182']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 478.00 | 251.18 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 50.13 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 52.61 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 49.61 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 48.47 | 0
+  - punt_ingles [0-100]: 1446 | 0 | 0.00 | 100.00 | 50.58 | 0
+- cole_cod_depto_ubicacion: nulos=53817, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1113
+- columnas con nulos>0: 49 de 59
+  - cole_bilingue: 138036  <-- cole_bilingue
+  - fami_numlibros: 105338
+  - fami_comelechederivados: 96265
+  - fami_estratovivienda: 94691
+  - fami_comecerealfrutoslegumbre: 93806
+  - estu_dedicacioninternet: 93345
+  - fami_comecarnepescadohuevo: 92815
+  - fami_tieneserviciotv: 92354
+  - estu_dedicacionlecturadiaria: 92009
+  - fami_tieneinternet: 91215
+  - fami_educacionpadre: 90978
+  - fami_educacionmadre: 90788
+  - fami_trabajolaborpadre: 76804
+  - estu_tiporemuneracion: 76539
+  - fami_tieneconsolavideojuegos: 76095
+  - fami_tieneautomovil: 76084
+  - fami_trabajolabormadre: 75748
+  - fami_tienehornomicroogas: 75518
+  - estu_horassemanatrabaja: 75054
+  - fami_tienemotocicleta: 75043
+  - fami_cuartoshogar: 75037
+  - fami_situacioneconomica: 74784
+  - fami_tienecomputador: 74743
+  - fami_tienelavadora: 74650
+  - fami_personashogar: 74015
+  - estu_inse_individual: 72176
+  - estu_nse_individual: 72176
+  - estu_nse_establecimiento: 55730
+  - cole_jornada: 53836
+  - cole_area_ubicacion: 53817
+  - cole_cod_depto_ubicacion: 53817
+  - cole_cod_mcpio_ubicacion: 53817
+  - cole_depto_ubicacion: 53817
+  - cole_mcpio_ubicacion: 53817
+  - cole_naturaleza: 53817
+  - cole_sede_principal: 53817
+  - estu_grado: 52306
+  - estu_cod_reside_depto: 1786
+  - estu_cod_reside_mcpio: 1786
+  - estu_depto_reside: 1786
+  - estu_mcpio_reside: 1786
+  - punt_ingles: 1446
+  - estu_genero: 22
+  - estu_repite: 22
+  - estu_agregado: 1
+  - estu_cod_depto_presentacion: 1
+  - estu_cod_mcpio_presentacion: 1
+  - estu_depto_presentacion: 1
+  - estu_mcpio_presentacion: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 53817
+  - punt_global == 0: 5
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 1446
+
+### 20191 (Examen_Saber_11_20191_limpio.csv)
+
+- registros: 66104
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20191']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 9.00 | 470.00 | 271.92 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 54.87 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 56.09 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 53.80 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 53.20 | 0
+  - punt_ingles [0-100]: 116 | 0 | 0.00 | 100.00 | 53.09 | 0
+- cole_cod_depto_ubicacion: nulos=44762, nunique=29, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '94', '95']
+- cole_cod_mcpio_ubicacion: nunique=147
+- columnas con nulos>0: 44 de 59
+  - cole_bilingue: 48946  <-- cole_bilingue
+  - fami_numlibros: 46512
+  - fami_comelechederivados: 46289
+  - fami_comecerealfrutoslegumbre: 46182
+  - fami_estratovivienda: 46168
+  - fami_comecarnepescadohuevo: 46160
+  - fami_tieneserviciotv: 46157
+  - estu_dedicacioninternet: 46152
+  - estu_dedicacionlecturadiaria: 46134
+  - fami_tieneinternet: 46122
+  - fami_educacionpadre: 46088
+  - fami_educacionmadre: 46071
+  - fami_tieneautomovil: 45653
+  - estu_tiporemuneracion: 45650
+  - fami_tieneconsolavideojuegos: 45646
+  - fami_tienehornomicroogas: 45639
+  - fami_trabajolaborpadre: 45635
+  - fami_tienemotocicleta: 45630
+  - fami_situacioneconomica: 45628
+  - fami_tienelavadora: 45610
+  - fami_trabajolabormadre: 45591
+  - fami_cuartoshogar: 45590
+  - fami_tienecomputador: 45587
+  - estu_horassemanatrabaja: 45586
+  - estu_inse_individual: 45580
+  - estu_nse_individual: 45580
+  - fami_personashogar: 45546
+  - estu_grado: 44777
+  - estu_nse_establecimiento: 44766
+  - cole_area_ubicacion: 44762
+  - cole_cod_depto_ubicacion: 44762
+  - cole_cod_mcpio_ubicacion: 44762
+  - cole_depto_ubicacion: 44762
+  - cole_jornada: 44762
+  - cole_mcpio_ubicacion: 44762
+  - cole_naturaleza: 44762
+  - cole_sede_principal: 44762
+  - punt_ingles: 116
+  - estu_cod_reside_depto: 52
+  - estu_cod_reside_mcpio: 52
+  - estu_depto_reside: 52
+  - estu_mcpio_reside: 52
+  - estu_genero: 6
+  - estu_repite: 6
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 44762
+  - punt_global == 0: 0
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 116
+
+### 20192 (Examen_Saber_11_20192_limpio.csv)
+
+- registros: 614789
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20192']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 477.00 | 246.22 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 50.46 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 52.14 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 48.27 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 46.44 | 0
+  - punt_ingles [0-100]: 2894 | 0 | 0.00 | 100.00 | 48.27 | 0
+- cole_cod_depto_ubicacion: nulos=60020, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1113
+- columnas con nulos>0: 49 de 59
+  - cole_bilingue: 149158  <-- cole_bilingue
+  - fami_numlibros: 105121
+  - fami_comelechederivados: 97073
+  - fami_estratovivienda: 94880
+  - fami_comecerealfrutoslegumbre: 93942
+  - estu_dedicacioninternet: 93266
+  - fami_comecarnepescadohuevo: 92869
+  - fami_tieneserviciotv: 92258
+  - estu_dedicacionlecturadiaria: 92066
+  - fami_tieneinternet: 91295
+  - fami_educacionpadre: 90849
+  - fami_educacionmadre: 90695
+  - fami_trabajolaborpadre: 78485
+  - fami_tieneconsolavideojuegos: 78256
+  - estu_tiporemuneracion: 78249
+  - fami_tieneautomovil: 78239
+  - fami_situacioneconomica: 78027
+  - fami_tienehornomicroogas: 77698
+  - fami_trabajolabormadre: 77663
+  - fami_cuartoshogar: 77302
+  - fami_tienemotocicleta: 77256
+  - estu_inse_individual: 77174
+  - estu_nse_individual: 77174
+  - fami_tienecomputador: 77123
+  - estu_horassemanatrabaja: 77032
+  - fami_tienelavadora: 76891
+  - fami_personashogar: 76133
+  - estu_nse_establecimiento: 61402
+  - cole_jornada: 60023
+  - cole_area_ubicacion: 60020
+  - cole_cod_depto_ubicacion: 60020
+  - cole_cod_mcpio_ubicacion: 60020
+  - cole_depto_ubicacion: 60020
+  - cole_mcpio_ubicacion: 60020
+  - cole_naturaleza: 60020
+  - cole_sede_principal: 60020
+  - estu_grado: 58222
+  - punt_ingles: 2894
+  - estu_cod_reside_depto: 2275
+  - estu_cod_reside_mcpio: 2275
+  - estu_depto_reside: 2275
+  - estu_mcpio_reside: 2275
+  - estu_genero: 153
+  - estu_repite: 153
+  - estu_agregado: 7
+  - estu_cod_depto_presentacion: 3
+  - estu_cod_mcpio_presentacion: 3
+  - estu_depto_presentacion: 3
+  - estu_mcpio_presentacion: 3
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 60020
+  - punt_global == 0: 5
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 2894
+
+### 20211 (Examen_Saber_11_20211_limpio.csv)
+
+- registros: 58708
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20211']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 14.00 | 495.00 | 274.58 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 55.55 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 56.59 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 53.76 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 53.58 | 0
+  - punt_ingles [0-100]: 97 | 0 | 0.00 | 100.00 | 55.47 | 0
+- cole_cod_depto_ubicacion: nulos=43126, nunique=28, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '94', '95']
+- cole_cod_mcpio_ubicacion: nunique=102
+- columnas con nulos>0: 44 de 59
+  - cole_bilingue: 45686  <-- cole_bilingue
+  - fami_numlibros: 43997
+  - fami_comelechederivados: 43866
+  - fami_estratovivienda: 43831
+  - estu_dedicacioninternet: 43795
+  - fami_comecerealfrutoslegumbre: 43795
+  - fami_comecarnepescadohuevo: 43778
+  - estu_dedicacionlecturadiaria: 43777
+  - fami_tieneserviciotv: 43775
+  - fami_educacionmadre: 43774
+  - fami_educacionpadre: 43762
+  - fami_tieneinternet: 43758
+  - estu_tiporemuneracion: 43667
+  - fami_situacioneconomica: 43651
+  - fami_trabajolaborpadre: 43638
+  - fami_trabajolabormadre: 43634
+  - fami_cuartoshogar: 43632
+  - fami_tieneautomovil: 43630
+  - fami_tieneconsolavideojuegos: 43628
+  - fami_tienemotocicleta: 43628
+  - estu_horassemanatrabaja: 43627
+  - fami_tienehornomicroogas: 43621
+  - fami_tienelavadora: 43619
+  - fami_personashogar: 43616
+  - estu_inse_individual: 43606
+  - estu_nse_individual: 43606
+  - fami_tienecomputador: 43605
+  - cole_jornada: 43180
+  - estu_nse_establecimiento: 43148
+  - cole_area_ubicacion: 43126
+  - cole_cod_depto_ubicacion: 43126
+  - cole_cod_mcpio_ubicacion: 43126
+  - cole_depto_ubicacion: 43126
+  - cole_mcpio_ubicacion: 43126
+  - cole_naturaleza: 43126
+  - cole_sede_principal: 43126
+  - estu_grado: 43125
+  - punt_ingles: 97
+  - estu_cod_reside_depto: 32
+  - estu_cod_reside_mcpio: 32
+  - estu_depto_reside: 32
+  - estu_mcpio_reside: 32
+  - estu_genero: 6
+  - estu_repite: 6
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 43126
+  - punt_global == 0: 0
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 97
+
+### 20212 (Examen_Saber_11_20212_limpio.csv)
+
+- registros: 606030
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20212']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 500.00 | 246.93 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 49.76 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 52.43 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 48.33 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 47.15 | 0
+  - punt_ingles [0-100]: 6220 | 0 | 0.00 | 100.00 | 49.09 | 0
+- cole_cod_depto_ubicacion: nulos=64548, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1114
+- columnas con nulos>0: 48 de 59
+  - cole_bilingue: 157500  <-- cole_bilingue
+  - fami_numlibros: 108031
+  - fami_comelechederivados: 97092
+  - fami_estratovivienda: 94530
+  - fami_comecerealfrutoslegumbre: 93142
+  - estu_dedicacioninternet: 92890
+  - fami_tieneserviciotv: 92261
+  - fami_comecarnepescadohuevo: 92090
+  - estu_dedicacionlecturadiaria: 91726
+  - fami_tieneinternet: 91306
+  - fami_educacionpadre: 90754
+  - fami_educacionmadre: 90749
+  - fami_tieneconsolavideojuegos: 81859
+  - fami_tieneautomovil: 81854
+  - fami_situacioneconomica: 81748
+  - estu_tiporemuneracion: 81456
+  - fami_tienehornomicroogas: 81441
+  - fami_trabajolaborpadre: 81393
+  - fami_cuartoshogar: 80778
+  - fami_tienelavadora: 80766
+  - fami_tienemotocicleta: 80749
+  - fami_trabajolabormadre: 80745
+  - fami_tienecomputador: 80568
+  - estu_horassemanatrabaja: 80553
+  - estu_inse_individual: 80307
+  - estu_nse_individual: 80307
+  - fami_personashogar: 79825
+  - estu_nse_establecimiento: 65140
+  - cole_jornada: 64562
+  - cole_area_ubicacion: 64548
+  - cole_cod_depto_ubicacion: 64548
+  - cole_cod_mcpio_ubicacion: 64548
+  - cole_depto_ubicacion: 64548
+  - cole_mcpio_ubicacion: 64548
+  - cole_naturaleza: 64548
+  - cole_sede_principal: 64548
+  - estu_grado: 63077
+  - punt_ingles: 6220
+  - estu_cod_reside_depto: 227
+  - estu_cod_reside_mcpio: 227
+  - estu_depto_reside: 227
+  - estu_mcpio_reside: 227
+  - estu_genero: 98
+  - estu_repite: 98
+  - estu_cod_depto_presentacion: 1
+  - estu_cod_mcpio_presentacion: 1
+  - estu_depto_presentacion: 1
+  - estu_mcpio_presentacion: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 64548
+  - punt_global == 0: 6
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 6220
+
+### 20221 (Examen_Saber_11_20221_limpio.csv)
+
+- registros: 73795
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20221']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 82.00 | 500.00 | 267.90 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 54.03 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 55.79 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 52.47 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 51.71 | 0
+  - punt_ingles [0-100]: 184 | 0 | 0.00 | 100.00 | 54.57 | 0
+- cole_cod_depto_ubicacion: nulos=53746, nunique=29, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '94', '95']
+- cole_cod_mcpio_ubicacion: nunique=165
+- columnas con nulos>0: 44 de 59
+  - cole_bilingue: 58649  <-- cole_bilingue
+  - fami_numlibros: 54890
+  - fami_comelechederivados: 54668
+  - fami_estratovivienda: 54610
+  - fami_comecerealfrutoslegumbre: 54587
+  - estu_dedicacioninternet: 54571
+  - fami_comecarnepescadohuevo: 54557
+  - fami_tieneserviciotv: 54555
+  - estu_dedicacionlecturadiaria: 54549
+  - fami_tieneinternet: 54514
+  - fami_educacionmadre: 54502
+  - fami_educacionpadre: 54497
+  - estu_tiporemuneracion: 54414
+  - fami_tieneautomovil: 54414
+  - fami_tieneconsolavideojuegos: 54413
+  - fami_situacioneconomica: 54402
+  - fami_tienehornomicroogas: 54396
+  - fami_tienemotocicleta: 54387
+  - fami_trabajolaborpadre: 54372
+  - fami_tienelavadora: 54367
+  - fami_trabajolabormadre: 54366
+  - estu_horassemanatrabaja: 54365
+  - fami_tienecomputador: 54362
+  - fami_cuartoshogar: 54355
+  - estu_inse_individual: 54338
+  - estu_nse_individual: 54338
+  - fami_personashogar: 54328
+  - estu_nse_establecimiento: 53750
+  - cole_area_ubicacion: 53746
+  - cole_cod_depto_ubicacion: 53746
+  - cole_cod_mcpio_ubicacion: 53746
+  - cole_depto_ubicacion: 53746
+  - cole_jornada: 53746
+  - cole_mcpio_ubicacion: 53746
+  - cole_naturaleza: 53746
+  - cole_sede_principal: 53746
+  - estu_grado: 53582
+  - punt_ingles: 184
+  - estu_cod_reside_depto: 82
+  - estu_cod_reside_mcpio: 82
+  - estu_depto_reside: 82
+  - estu_mcpio_reside: 82
+  - estu_genero: 1
+  - estu_repite: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 53746
+  - punt_global == 0: 0
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 184
+
+### 20222 (Examen_Saber_11_20222_limpio.csv)
+
+- registros: 589183
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20222']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 500.00 | 250.37 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 50.56 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 52.77 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 49.18 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 47.88 | 0
+  - punt_ingles [0-100]: 4697 | 0 | 0.00 | 100.00 | 49.83 | 0
+- cole_cod_depto_ubicacion: nulos=45477, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1114
+- columnas con nulos>0: 48 de 59
+  - cole_bilingue: 143449  <-- cole_bilingue
+  - fami_numlibros: 92071
+  - fami_comelechederivados: 82545
+  - fami_estratovivienda: 81695
+  - fami_comecerealfrutoslegumbre: 79173
+  - estu_dedicacioninternet: 78819
+  - fami_tieneserviciotv: 78325
+  - fami_comecarnepescadohuevo: 78144
+  - estu_dedicacionlecturadiaria: 77815
+  - fami_tieneinternet: 77343
+  - fami_educacionmadre: 76712
+  - fami_educacionpadre: 76576
+  - fami_situacioneconomica: 70913
+  - fami_tieneconsolavideojuegos: 70300
+  - fami_tieneautomovil: 70244
+  - estu_tiporemuneracion: 70189
+  - fami_trabajolaborpadre: 70001
+  - fami_tienehornomicroogas: 69840
+  - fami_trabajolabormadre: 69620
+  - estu_horassemanatrabaja: 69401
+  - fami_cuartoshogar: 69397
+  - fami_tienemotocicleta: 69325
+  - fami_tienelavadora: 69282
+  - fami_tienecomputador: 69210
+  - estu_inse_individual: 68728
+  - estu_nse_individual: 68728
+  - fami_personashogar: 68506
+  - estu_nse_establecimiento: 45551
+  - cole_jornada: 45485
+  - cole_area_ubicacion: 45477
+  - cole_cod_depto_ubicacion: 45477
+  - cole_cod_mcpio_ubicacion: 45477
+  - cole_depto_ubicacion: 45477
+  - cole_mcpio_ubicacion: 45477
+  - cole_naturaleza: 45477
+  - cole_sede_principal: 45477
+  - estu_grado: 43795
+  - punt_ingles: 4697
+  - estu_cod_depto_presentacion: 13
+  - estu_cod_mcpio_presentacion: 13
+  - estu_depto_presentacion: 13
+  - estu_mcpio_presentacion: 13
+  - estu_genero: 6
+  - estu_repite: 6
+  - estu_cod_reside_depto: 1
+  - estu_cod_reside_mcpio: 1
+  - estu_depto_reside: 1
+  - estu_mcpio_reside: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 45477
+  - punt_global == 0: 4
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 4697
+
+### 20231 (Examen_Saber_11_20231_limpio.csv)
+
+- registros: 77555
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20231']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 478.00 | 262.73 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 52.32 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 54.59 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 51.57 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 51.09 | 0
+  - punt_ingles [0-100]: 177 | 0 | 0.00 | 100.00 | 54.41 | 0
+- cole_cod_depto_ubicacion: nulos=56903, nunique=29, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '94', '95']
+- cole_cod_mcpio_ubicacion: nunique=151
+- columnas con nulos>0: 42 de 59
+  - cole_bilingue: 62337  <-- cole_bilingue
+  - fami_numlibros: 58733
+  - fami_comelechederivados: 58543
+  - fami_comecerealfrutoslegumbre: 58439
+  - fami_comecarnepescadohuevo: 58435
+  - fami_estratovivienda: 58414
+  - estu_dedicacioninternet: 58409
+  - estu_dedicacionlecturadiaria: 58374
+  - fami_tieneserviciotv: 58368
+  - estu_tiporemuneracion: 58341
+  - fami_tieneinternet: 58330
+  - fami_tieneautomovil: 58323
+  - fami_tieneconsolavideojuegos: 58315
+  - fami_situacioneconomica: 58308
+  - fami_tienemotocicleta: 58296
+  - fami_educacionpadre: 58286
+  - fami_educacionmadre: 58283
+  - estu_horassemanatrabaja: 58282
+  - fami_tienehornomicroogas: 58266
+  - fami_tienelavadora: 58227
+  - fami_tienecomputador: 58211
+  - estu_inse_individual: 58178
+  - estu_nse_individual: 58178
+  - fami_cuartoshogar: 58175
+  - fami_trabajolaborpadre: 58169
+  - fami_trabajolabormadre: 58153
+  - fami_personashogar: 58123
+  - estu_nse_establecimiento: 56908
+  - cole_area_ubicacion: 56903
+  - cole_cod_depto_ubicacion: 56903
+  - cole_cod_mcpio_ubicacion: 56903
+  - cole_depto_ubicacion: 56903
+  - cole_jornada: 56903
+  - cole_mcpio_ubicacion: 56903
+  - cole_naturaleza: 56903
+  - cole_sede_principal: 56903
+  - estu_grado: 56844
+  - punt_ingles: 177
+  - estu_cod_depto_presentacion: 1
+  - estu_cod_mcpio_presentacion: 1
+  - estu_depto_presentacion: 1
+  - estu_mcpio_presentacion: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 56903
+  - punt_global == 0: 2
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 177
+
+### 20232 (Examen_Saber_11_20232_limpio.csv)
+
+- registros: 602093
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20232']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 500.00 | 252.15 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 50.95 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 52.83 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 49.57 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 48.29 | 0
+  - punt_ingles [0-100]: 5890 | 0 | 0.00 | 100.00 | 50.73 | 0
+- cole_cod_depto_ubicacion: nulos=39179, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1116
+- columnas con nulos>0: 44 de 59
+  - cole_bilingue: 143781  <-- cole_bilingue
+  - fami_comelechederivados: 90403
+  - fami_comecerealfrutoslegumbre: 89064
+  - fami_estratovivienda: 88949
+  - fami_numlibros: 88275
+  - estu_dedicacioninternet: 85851
+  - fami_comecarnepescadohuevo: 85593
+  - fami_tieneserviciotv: 84953
+  - estu_dedicacionlecturadiaria: 84660
+  - fami_tieneinternet: 83655
+  - fami_educacionmadre: 83192
+  - fami_educacionpadre: 82905
+  - fami_situacioneconomica: 72569
+  - fami_tieneconsolavideojuegos: 71051
+  - estu_tiporemuneracion: 70842
+  - fami_tieneautomovil: 70840
+  - fami_tienehornomicroogas: 70391
+  - fami_tienemotocicleta: 70273
+  - fami_trabajolaborpadre: 70251
+  - estu_inse_individual: 70060
+  - estu_nse_individual: 70060
+  - estu_horassemanatrabaja: 70014
+  - fami_cuartoshogar: 69982
+  - fami_trabajolabormadre: 69923
+  - fami_tienecomputador: 69761
+  - fami_tienelavadora: 69761
+  - fami_personashogar: 68749
+  - estu_nse_establecimiento: 39249
+  - cole_jornada: 39180
+  - cole_mcpio_ubicacion: 39180
+  - cole_area_ubicacion: 39179
+  - cole_cod_depto_ubicacion: 39179
+  - cole_cod_mcpio_ubicacion: 39179
+  - cole_depto_ubicacion: 39179
+  - cole_naturaleza: 39179
+  - cole_sede_principal: 39179
+  - estu_grado: 38211
+  - punt_ingles: 5890
+  - estu_genero: 27
+  - estu_repite: 27
+  - estu_cod_depto_presentacion: 20
+  - estu_cod_mcpio_presentacion: 20
+  - estu_depto_presentacion: 20
+  - estu_mcpio_presentacion: 20
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 39179
+  - punt_global == 0: 7
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 5890
+
+### 20241 (Examen_Saber_11_20241_limpio.csv)
+
+- registros: 84072
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20241']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 496.00 | 265.57 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 53.32 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 54.89 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 51.93 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 51.90 | 0
+  - punt_ingles [0-100]: 150 | 0 | 0.00 | 100.00 | 54.35 | 0
+- cole_cod_depto_ubicacion: nulos=63442, nunique=29, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '94', '95']
+- cole_cod_mcpio_ubicacion: nunique=161
+- columnas con nulos>0: 44 de 59
+  - cole_bilingue: 84072  <-- cole_bilingue
+  - fami_numlibros: 65831
+  - fami_comelechederivados: 65603
+  - fami_comecerealfrutoslegumbre: 65511
+  - estu_dedicacioninternet: 65491
+  - fami_comecarnepescadohuevo: 65484
+  - fami_tieneserviciotv: 65478
+  - estu_dedicacionlecturadiaria: 65458
+  - fami_tieneinternet: 65442
+  - estu_inse_individual: 65418
+  - estu_nse_individual: 65418
+  - fami_educacionmadre: 65416
+  - fami_educacionpadre: 65396
+  - fami_tieneautomovil: 65237
+  - fami_tieneconsolavideojuegos: 65223
+  - estu_tiporemuneracion: 65220
+  - fami_situacioneconomica: 65216
+  - fami_tienehornomicroogas: 65216
+  - fami_tienemotocicleta: 65188
+  - fami_tienelavadora: 65185
+  - fami_tienecomputador: 65184
+  - estu_horassemanatrabaja: 65180
+  - fami_trabajolabormadre: 65142
+  - fami_trabajolaborpadre: 65123
+  - fami_cuartoshogar: 65122
+  - fami_personashogar: 65108
+  - cole_area_ubicacion: 63442
+  - cole_cod_depto_ubicacion: 63442
+  - cole_cod_mcpio_ubicacion: 63442
+  - cole_depto_ubicacion: 63442
+  - cole_jornada: 63442
+  - cole_mcpio_ubicacion: 63442
+  - cole_naturaleza: 63442
+  - cole_sede_principal: 63442
+  - estu_nse_establecimiento: 63442
+  - estu_grado: 62478
+  - fami_estratovivienda: 3138
+  - punt_ingles: 150
+  - estu_cod_reside_depto: 3
+  - estu_cod_reside_mcpio: 3
+  - estu_depto_reside: 3
+  - estu_mcpio_reside: 3
+  - estu_genero: 1
+  - estu_repite: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 63442
+  - punt_global == 0: 2
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 150
+
+### 20242 (Examen_Saber_11_20242_limpio.csv)
+
+- registros: 592436
+- columnas: 59; identicas a lista 59: True
+- periodo unicos: ['20242']
+- puntajes (nulos | no_numericos | min | max | media | fuera_escala):
+  - punt_global [0-500]: 0 | 0 | 0.00 | 495.00 | 253.94 | 0
+  - punt_matematicas [0-100]: 0 | 0 | 0.00 | 100.00 | 51.50 | 0
+  - punt_lectura_critica [0-100]: 0 | 0 | 0.00 | 100.00 | 53.31 | 0
+  - punt_c_naturales [0-100]: 0 | 0 | 0.00 | 100.00 | 50.05 | 0
+  - punt_sociales_ciudadanas [0-100]: 0 | 0 | 0.00 | 100.00 | 48.21 | 0
+  - punt_ingles [0-100]: 7158 | 0 | 0.00 | 100.00 | 51.18 | 0
+- cole_cod_depto_ubicacion: nulos=35138, nunique=33, formato=digitos_sin_ceros_izquierda, codigos=['11', '13', '15', '17', '18', '19', '20', '23', '25', '27', '41', '44', '47', '5', '50', '52', '54', '63', '66', '68', '70', '73', '76', '8', '81', '85', '86', '88', '91', '94', '95', '97', '99']
+- cole_cod_mcpio_ubicacion: nunique=1118
+- columnas con nulos>0: 50 de 59
+  - cole_bilingue: 143852  <-- cole_bilingue
+  - fami_numlibros: 109861
+  - fami_comecerealfrutoslegumbre: 97619
+  - estu_dedicacioninternet: 97229
+  - fami_comecarnepescadohuevo: 96641
+  - fami_tieneserviciotv: 96298
+  - estu_dedicacionlecturadiaria: 96178
+  - estu_inse_individual: 95989
+  - estu_nse_individual: 95989
+  - fami_comelechederivados: 95701
+  - fami_tieneinternet: 95255
+  - fami_educacionmadre: 95174
+  - fami_educacionpadre: 94865
+  - fami_situacioneconomica: 80282
+  - fami_tieneautomovil: 78345
+  - estu_tiporemuneracion: 78320
+  - fami_tieneconsolavideojuegos: 78312
+  - fami_trabajolaborpadre: 77821
+  - fami_cuartoshogar: 77660
+  - fami_trabajolabormadre: 77633
+  - estu_horassemanatrabaja: 77394
+  - fami_tienemotocicleta: 77323
+  - fami_tienelavadora: 77319
+  - fami_tienecomputador: 77303
+  - fami_personashogar: 76351
+  - fami_tienehornomicroogas: 76261
+  - fami_estratovivienda: 36379
+  - estu_nse_establecimiento: 35154
+  - cole_jornada: 35139
+  - cole_sede_principal: 35139
+  - cole_area_ubicacion: 35138
+  - cole_cod_depto_ubicacion: 35138
+  - cole_cod_mcpio_ubicacion: 35138
+  - cole_depto_ubicacion: 35138
+  - cole_mcpio_ubicacion: 35138
+  - cole_naturaleza: 35138
+  - estu_grado: 34045
+  - punt_ingles: 7158
+  - estu_cod_reside_depto: 4441
+  - estu_cod_reside_mcpio: 4441
+  - estu_depto_reside: 4441
+  - estu_mcpio_reside: 4441
+  - estu_cod_depto_presentacion: 19
+  - estu_cod_mcpio_presentacion: 19
+  - estu_depto_presentacion: 19
+  - estu_mcpio_presentacion: 19
+  - estu_repite: 3
+  - estu_fechanacimiento: 2
+  - estu_genero: 1
+  - estu_pais_reside: 1
+- duplicados exactos: 0
+- diagnostico Fase 1 (SIN aplicar):
+  - depto nulo: 35138
+  - punt_global == 0: 3
+  - punt_global nulo: 0
+  - alguna de las 5 areas nula: 7158
+
+## D — Checkpoints contra el documento (expectativas, no resultados)
+
+- total medido: 3973901; expectativa documento: 4039755
+- diferencia exacta (medido - expectativa): -65854
+- registros de periodos P1 existentes (min-max): 58708-84072 [(58708, '20211'), (66104, '20191'), (73795, '20221'), (77555, '20231'), (84072, '20241')]
+- hipotesis 'falta el periodo 20181': ver bitacora SESION-002.
+- referencia cruzada filtros documento (606214 | 22 | 28394) vs diagnostico medido:
+  - 20182: depto_nulo=53817, global_cero=5, global_nulo=0, area_nula=1446
+  - 20191: depto_nulo=44762, global_cero=0, global_nulo=0, area_nula=116
+  - 20192: depto_nulo=60020, global_cero=5, global_nulo=0, area_nula=2894
+  - 20211: depto_nulo=43126, global_cero=0, global_nulo=0, area_nula=97
+  - 20212: depto_nulo=64548, global_cero=6, global_nulo=0, area_nula=6220
+  - 20221: depto_nulo=53746, global_cero=0, global_nulo=0, area_nula=184
+  - 20222: depto_nulo=45477, global_cero=4, global_nulo=0, area_nula=4697
+  - 20231: depto_nulo=56903, global_cero=2, global_nulo=0, area_nula=177
+  - 20232: depto_nulo=39179, global_cero=7, global_nulo=0, area_nula=5890
+  - 20241: depto_nulo=63442, global_cero=2, global_nulo=0, area_nula=150
+  - 20242: depto_nulo=35138, global_cero=3, global_nulo=0, area_nula=7158
+- totales diagnostico 11 archivos: {'depto_nulo': 560158, 'global_cero': 34, 'global_nulo': 0, 'area_nula': 29029}
+- referencia documento: (606214, 22, 28394) (sin mapeo asumido)
+
+## Seccion IPM
+
+Ver datos/output/reports/01_inventario_ipm.md.

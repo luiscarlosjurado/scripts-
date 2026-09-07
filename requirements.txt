@@ -1,0 +1,22 @@
+# Dependencias mínimas del proyecto Saber 11 x IPM (regla 9 de AGENTS.md).
+# Versiones fijadas (==) con pip freeze del venv en SESION-002 (2026-09-07):
+# pandas==3.0.5, numpy==2.5.3, matplotlib==3.11.1, seaborn==0.13.2,
+# openpyxl==3.1.5, pyarrow==25.0.1.
+
+# Manipulación de los CSV de ICFES y del panel departamental (regla 21: pandas + pathlib)
+pandas==3.0.5
+
+# Soporte numérico de pandas y cálculos vectorizados (cuartiles, umbrales, estadísticos)
+numpy==2.5.3
+
+# Gráficos de series temporales departamentales y resultados de modelos
+matplotlib==3.11.1
+
+# Gráficos estadísticos (correlaciones, distribuciones, mapas de calor)
+seaborn==0.13.2
+
+# Lectura del anexo IPM en Excel (datos/anex-PMultidimensional-Departamental-2024.xlsx)
+openpyxl==3.1.5
+
+# Escritura/lectura de datos intermedios en parquet (datos/processed/*.parquet, regla 7)
+pyarrow==25.0.1
