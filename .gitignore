@@ -1,3 +1,9 @@
 datos/raw/*
 !datos/raw/.gitkeep
 venv/
+
+# Artefactos pesados generados por el pipeline (reglas 7-8 de AGENTS.md).
+# OJO: NO se ignoran datos/output/reports/ ni las figuras *.png (evidencia del proyecto).
+datos/processed/*.csv
+datos/processed/*.parquet
+datos/output/*.csv
